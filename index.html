@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Akwaba — Résidences en Côte d'Ivoire</title>
+  <meta name="description" content="Trouvez et réservez les plus belles résidences de Côte d'Ivoire : Assinie, Grand-Bassam, Abidjan, Yamoussoukro, Man…">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%233E6BF7' d='M16 2l12 7v14l-12 7-12-7V9z'/%3E%3Cpath fill='%23fff' d='M8 20l5-6 3 3 3-5 5 8z'/%3E%3C/svg%3E">
+</head>
+<body>
+
+<!-- ========== SVG SPRITE ========== -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-send" viewBox="0 0 24 24"><path d="M21 3 3 10.5l7.5 3L13.5 21z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+    <symbol id="i-cal" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><rect x="4" y="5" width="16" height="15" rx="2.5"/><path d="M4 9.5h16M8.5 3v3M15.5 3v3M8 13.5h8M8 16.5h5"/></g></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="8" r="3.6"/><path d="M5 20c.8-3.6 3.6-5.6 7-5.6s6.2 2 7 5.6"/></g></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="6"/><path d="m20 20-4.2-4.2"/></g></symbol>
+    <symbol id="i-bell" viewBox="0 0 24 24"><path d="M6 16.5V11a6 6 0 1 1 12 0v5.5l1.5 1.5h-15zM10 20.5a2 2 0 0 0 4 0" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.4 2.4 3.4 5.2 3.4 8.5s-1 6.1-3.4 8.5c-2.4-2.4-3.4-5.2-3.4-8.5s1-6.1 3.4-8.5z"/></g></symbol>
+    <symbol id="i-chev-down" viewBox="0 0 24 24"><path d="m7 10 5 5 5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-chev-left" viewBox="0 0 24 24"><path d="m14 7-5 5 5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-chev-right" viewBox="0 0 24 24"><path d="m10 7 5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-arrow-left" viewBox="0 0 24 24"><path d="M19 12H5m5-5-5 5 5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14m-5-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-home" viewBox="0 0 24 24"><path d="M4 11 12 4l8 7M6 9.5V20h12V9.5M10 20v-5h4v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-flag" viewBox="0 0 24 24"><path d="M6 21V4m0 1h11l-2 4 2 4H6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 3 2.7 5.6 6.1.8-4.5 4.2 1.1 6.1L12 16.8l-5.4 2.9 1.1-6.1-4.5-4.2 6.1-.8z" fill="currentColor"/></symbol>
+    <symbol id="i-share" viewBox="0 0 24 24"><path d="M21 3 3 10.5l7.5 3L13.5 21z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+    <symbol id="i-upload" viewBox="0 0 24 24"><path d="M12 15V4m-4 4 4-4 4 4M5 13v5a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-7.5-4.6-7.5-10.2A4.3 4.3 0 0 1 12 7.2a4.3 4.3 0 0 1 7.5 2.6C19.5 15.4 12 20 12 20z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+    <symbol id="i-more" viewBox="0 0 24 24"><g fill="currentColor"><circle cx="6" cy="12" r="1.6"/><circle cx="12" cy="12" r="1.6"/><circle cx="18" cy="12" r="1.6"/></g></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m7 7 10 10M17 7 7 17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 6v12M6 12h12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-minus" viewBox="0 0 24 24"><path d="M6 12h12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-bag" viewBox="0 0 24 24"><path d="M5 8h14l-1 12H6zM9 8V6.5a3 3 0 0 1 6 0V8" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></g></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m6 12.5 4 4 8-9" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-badge" viewBox="0 0 24 24"><path d="m12 3 2.2 1.6 2.7-.1.8 2.6 2.2 1.6-.9 2.6.9 2.6-2.2 1.6-.8 2.6-2.7-.1L12 21l-2.2-1.6-2.7.1-.8-2.6-2.2-1.6.9-2.6-.9-2.6 2.2-1.6.8-2.6 2.7.1z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></symbol>
+    <symbol id="i-wifi" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><rect x="3.5" y="13" width="17" height="6" rx="1.5"/><path d="M7 16h.01M10 16h.01M12 13V8m-3.5-1.5a5 5 0 0 1 7 0M6 4.5a8.5 8.5 0 0 1 12 0"/></g></symbol>
+    <symbol id="i-screen" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><rect x="3.5" y="4.5" width="17" height="12" rx="2"/><path d="M9 20h6M12 16.5V20M7 9h6M7 12h4"/></g></symbol>
+    <symbol id="i-bath" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4h9a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3H9a3 3 0 0 1-3-3z"/><path d="M6 9h12M10 13.5h.01"/></g></symbol>
+    <symbol id="i-food" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M4 13h16a8 4.5 0 0 1-16 0zM4 13a8 6 0 0 1 16 0M3 17.5h18M9 9.5h.01M13 8.5h.01"/></g></symbol>
+    <symbol id="i-pool" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M3 17c2 0 2-1.3 4.5-1.3S9.5 17 12 17s2-1.3 4.5-1.3S18.5 17 21 17M3 20.5c2 0 2-1.3 4.5-1.3s2 1.3 4.5 1.3 2-1.3 4.5-1.3 2 1.3 4.5 1.3M8 14V5.5A2 2 0 0 1 12 5.5M16 14V5.5a2 2 0 0 0-4 0M8 9h8"/></g></symbol>
+    <symbol id="i-snow" viewBox="0 0 24 24"><path d="M12 3v18M4.2 7.5l15.6 9M4.2 16.5l15.6-9M9.5 4.5 12 7l2.5-2.5M9.5 19.5 12 17l2.5 2.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-car" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 16v-4l2-5h12l2 5v4zM4 16v2.5M20 16v2.5"/><circle cx="8" cy="13" r=".6"/><circle cx="16" cy="13" r=".6"/></g></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 5 6v5c0 4.6 3 8.4 7 10 4-1.6 7-5.4 7-10V6z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+    <symbol id="i-filter" viewBox="0 0 24 24"><path d="M4 7h10m4 0h2M4 17h4m4 0h8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="16" cy="7" r="2" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="10" cy="17" r="2" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
+  </defs>
+</svg>
+
+<div class="stage">
+  <div class="app" id="app">
+
+    <!-- Curseur animé (comme dans la vidéo) -->
+    <div class="cursor" id="cursor" aria-hidden="true"><span></span></div>
+
+    <!-- =========================================================
+         VUE 1 — ACCUEIL
+    ========================================================== -->
+    <section class="view view-home is-active" id="view-home" data-view="home">
+      <header class="nav">
+        <a class="logo" href="#" data-go="home" aria-label="Akwaba — accueil">
+          <svg class="logo__mark" viewBox="0 0 32 32" aria-hidden="true"><path fill="#1F2A44" d="M16 1.5 28.6 8.8v14.4L16 30.5 3.4 23.2V8.8z"/><path fill="#3E6BF7" d="M3.4 8.8 16 1.5l12.6 7.3v6.4L16 8 3.4 15.2z" opacity=".95"/><path fill="#fff" d="m8 21 4.6-5.6 2.8 2.6 3.4-4.8L24 21z"/><circle cx="21.5" cy="11.5" r="1.6" fill="#F7A23E"/></svg>
+          <span>akwaba</span>
+        </a>
+        <span class="nav__sep"></span>
+        <button class="nav__drop">Voyageurs <svg><use href="#i-chev-down"/></svg></button>
+        <nav class="nav__right">
+          <a href="#" class="nav__link">Assistance</a>
+          <a href="#" class="nav__link"><svg><use href="#i-globe"/></svg> Français</a>
+          <a href="#" class="btn-outline">Proposer mon logement</a>
+          <button class="nav__bell" aria-label="Notifications"><svg><use href="#i-bell"/></svg><i></i></button>
+          <img class="avatar" src="assets/img/user.jpg" alt="Profil">
+        </nav>
+      </header>
+
+      <div class="hero" id="hero">
+        <div class="hero__media">
+          <img src="assets/img/hero-lodge.jpg" alt="Lodge sur pilotis au bord de la lagune">
+        </div>
+        <div class="hero__fog" aria-hidden="true">
+          <span class="fog fog--1"></span><span class="fog fog--2"></span><span class="fog fog--3"></span>
+        </div>
+        <div class="hero__content">
+          <h1 class="hero__title">
+            <span class="line"><span>Vivre, dormir,</span></span>
+            <span class="line"><span>rêver</span></span>
+          </h1>
+          <p class="hero__sub reveal" style="--d:.55s">Trouvez et réservez une résidence d'exception.</p>
+          <button class="btn-primary reveal" style="--d:.7s" id="startSearch">Lancer la recherche</button>
+        </div>
+
+        <!-- Barre de recherche -->
+        <div class="search reveal-up" id="search">
+          <div class="search__tabs" role="tablist">
+            <button class="tab is-active" role="tab">Résidences</button>
+            <button class="tab" role="tab">Vols</button>
+            <button class="tab" role="tab">Voitures</button>
+            <button class="tab" role="tab">Activités</button>
+            <span class="tab__ink" id="tabInk"></span>
+          </div>
+          <div class="search__fields">
+            <div class="field field--loc" data-field="loc">
+              <svg class="field__ico"><use href="#i-send"/></svg>
+              <div class="field__txt">
+                <input id="locInput" type="text" autocomplete="off" placeholder="Destination" aria-label="Destination">
+                <small id="locSub">Où allez-vous ?</small>
+              </div>
+            </div>
+            <div class="field" data-field="in">
+              <svg class="field__ico"><use href="#i-cal"/></svg>
+              <div class="field__txt"><strong id="inTxt">Arrivée</strong><small>Ajouter une date</small></div>
+            </div>
+            <div class="field" data-field="out">
+              <svg class="field__ico"><use href="#i-cal"/></svg>
+              <div class="field__txt"><strong id="outTxt">Départ</strong><small>Ajouter une date</small></div>
+            </div>
+            <div class="field" data-field="guests">
+              <svg class="field__ico"><use href="#i-user"/></svg>
+              <div class="field__txt"><strong id="guestTxt">Voyageurs</strong><small id="guestSub">Ajouter des invités</small></div>
+            </div>
+            <button class="search__go" id="searchGo" aria-label="Rechercher"><svg><use href="#i-search"/></svg></button>
+          </div>
+
+          <!-- Popover destinations -->
+          <div class="pop pop-loc" id="popLoc"><ul id="locList"></ul></div>
+
+          <!-- Popover calendrier -->
+          <div class="pop pop-cal" id="popCal">
+            <div class="cal" id="cal"></div>
+          </div>
+
+          <!-- Popover voyageurs -->
+          <div class="pop pop-guests" id="popGuests">
+            <div class="stepper" data-k="adults"><div><strong>Adultes</strong><small>13 ans et plus</small></div><div class="stepper__ctl"><button data-op="-"><svg><use href="#i-minus"/></svg></button><span>2</span><button data-op="+"><svg><use href="#i-plus"/></svg></button></div></div>
+            <div class="stepper" data-k="children"><div><strong>Enfants</strong><small>De 2 à 12 ans</small></div><div class="stepper__ctl"><button data-op="-"><svg><use href="#i-minus"/></svg></button><span>0</span><button data-op="+"><svg><use href="#i-plus"/></svg></button></div></div>
+            <div class="stepper" data-k="babies"><div><strong>Bébés</strong><small>Moins de 2 ans</small></div><div class="stepper__ctl"><button data-op="-"><svg><use href="#i-minus"/></svg></button><span>0</span><button data-op="+"><svg><use href="#i-plus"/></svg></button></div></div>
+            <button class="btn-primary btn-block" id="guestsOk">Valider</button>
+          </div>
+        </div>
+      </div>
+      <div class="home__spacer"></div>
+    </section>
+
+    <!-- =========================================================
+         VUE 2 — RÉSULTATS
+    ========================================================== -->
+    <section class="view view-results" id="view-results" data-view="results">
+      <header class="nav nav--compact">
+        <a class="logo" href="#" data-go="home"><svg class="logo__mark" viewBox="0 0 32 32"><path fill="#1F2A44" d="M16 1.5 28.6 8.8v14.4L16 30.5 3.4 23.2V8.8z"/><path fill="#3E6BF7" d="M3.4 8.8 16 1.5l12.6 7.3v6.4L16 8 3.4 15.2z"/><path fill="#fff" d="m8 21 4.6-5.6 2.8 2.6 3.4-4.8L24 21z"/><circle cx="21.5" cy="11.5" r="1.6" fill="#F7A23E"/></svg><span>akwaba</span></a>
+        <span class="nav__sep"></span>
+        <button class="nav__drop">Voyageurs <svg><use href="#i-chev-down"/></svg></button>
+        <nav class="nav__right">
+          <a href="#" class="nav__link">Assistance</a>
+          <a href="#" class="nav__link"><svg><use href="#i-globe"/></svg> Français</a>
+          <a href="#" class="btn-outline">Proposer mon logement</a>
+          <button class="nav__bell" aria-label="Notifications"><svg><use href="#i-bell"/></svg><i></i></button>
+          <img class="avatar" src="assets/img/user.jpg" alt="Profil">
+        </nav>
+      </header>
+
+      <div class="dhero" id="dhero">
+        <div class="dhero__media"><img id="dheroImg" src="assets/img/dest-assinie.jpg" alt=""></div>
+        <div class="dhero__title">
+          <h1 id="dheroTitle">Assinie-Mafia</h1>
+          <p><span class="flag-ci" aria-hidden="true"></span> <span id="dheroSub">Côte d'Ivoire</span></p>
+        </div>
+        <div class="pill" id="pill">
+          <span class="pill__item pill__loc"><svg><use href="#i-send"/></svg><b id="pillLoc">Assinie-Mafia,</b> <span class="flag-ci"></span> <b>Côte d'Ivoire</b></span>
+          <span class="pill__item"><svg><use href="#i-cal"/></svg><b id="pillDates">24–28 déc.</b></span>
+          <span class="pill__item"><svg><use href="#i-user"/></svg><b id="pillGuests">2 voyageurs</b></span>
+          <button class="search__go search__go--sm" data-go="home" aria-label="Modifier la recherche"><svg><use href="#i-search"/></svg></button>
+        </div>
+      </div>
+
+      <div class="loader" id="loader" aria-label="Chargement"><i></i><i></i><i></i><i></i></div>
+
+      <div class="results" id="results">
+        <div class="topbar">
+          <button class="btn-back" data-go="home"><svg><use href="#i-chev-left"/></svg> Accueil</button>
+          <nav class="crumbs"><a href="#" data-go="home">Accueil</a><svg><use href="#i-chev-right"/></svg><a href="#">Résidences</a><svg><use href="#i-chev-right"/></svg><a href="#">Côte d'Ivoire</a><svg><use href="#i-chev-right"/></svg><span id="crumbDest">Assinie-Mafia</span></nav>
+        </div>
+
+        <div class="rhead">
+          <div>
+            <h2 class="rhead__title">Où séjourner</h2>
+            <p class="rhead__meta"><span class="tag-green">300+ SÉJOURS</span> <span id="rMeta">24–28 déc., 2 voyageurs</span></p>
+          </div>
+          <button class="btn-outline btn-outline--lg">Filtre avancé <svg><use href="#i-plus"/></svg></button>
+        </div>
+
+        <div class="chips">
+          <div class="chips__list">
+            <button class="chip is-active">Logement entier</button>
+            <button class="chip">Annulation flexible</button>
+            <button class="chip">Proche de la plage</button>
+            <button class="chip">Avec piscine</button>
+            <button class="chip">Longs séjours</button>
+          </div>
+          <label class="select">
+            <select id="sortSel"><option>En promotion</option><option>Prix croissant</option><option>Mieux notés</option></select>
+            <span class="select__btn"><svg><use href="#i-chev-down"/></svg></span>
+          </label>
+        </div>
+
+        <div class="sec-head">
+          <h3 id="exploreTitle">Explorer la lagune d'Assinie</h3>
+          <div class="arrows">
+            <button class="arrow" id="carPrev" aria-label="Précédent"><svg><use href="#i-arrow-left"/></svg></button>
+            <button class="arrow arrow--ring" id="carNext" aria-label="Suivant"><svg><use href="#i-arrow-right"/></svg></button>
+          </div>
+        </div>
+        <div class="carousel" id="carousel"><div class="carousel__track" id="track"></div></div>
+
+        <div class="sec-head sec-head--mt">
+          <h3>Plus de 300 séjours</h3>
+          <a href="#" class="link-more">Tout voir <svg><use href="#i-arrow-right"/></svg></a>
+        </div>
+        <div class="grid" id="grid"></div>
+
+        <footer class="foot">
+          <div class="foot__brand"><span class="flag-ci"></span> Akwaba · Résidences en Côte d'Ivoire</div>
+          <div class="foot__links"><a href="#">Abidjan</a><a href="#">Assinie</a><a href="#">Grand-Bassam</a><a href="#">Yamoussoukro</a><a href="#">Man</a></div>
+          <small>© 2026 Akwaba — Paiement Orange Money, MTN MoMo, Wave & cartes.</small>
+        </footer>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         VUE 3 — DÉTAIL
+    ========================================================== -->
+    <section class="view view-detail" id="view-detail" data-view="detail">
+      <div class="detail">
+        <div class="topbar">
+          <button class="btn-back" data-go="results"><svg><use href="#i-chev-left"/></svg> Retour</button>
+          <nav class="crumbs"><a href="#" data-go="home">Accueil</a><svg><use href="#i-chev-right"/></svg><a href="#" data-go="results">Résidences</a><svg><use href="#i-chev-right"/></svg><a href="#">Côte d'Ivoire</a><svg><use href="#i-chev-right"/></svg><span id="dCrumb">Assinie-Mafia</span></nav>
+        </div>
+
+        <div class="dhead">
+          <div>
+            <h1 class="dhead__title" id="dTitle">Vue imprenable sur la lagune d'Assinie</h1>
+            <p class="dhead__meta">
+              <img id="dHostMini" src="assets/img/host-1.jpg" alt="">
+              <svg class="star"><use href="#i-star"/></svg> <b id="dRating">4.8</b> <span class="muted" id="dReviews">(256 avis)</span>
+              <span class="dot-sep"></span><svg><use href="#i-badge"/></svg> Superhôte
+              <span class="dot-sep"></span><svg><use href="#i-flag"/></svg> <span id="dPlace">Assinie-Mafia, Sud-Comoé, Côte d'Ivoire</span>
+            </p>
+          </div>
+          <div class="dhead__actions">
+            <button class="icon-btn" aria-label="Partager"><svg><use href="#i-share"/></svg></button>
+            <button class="icon-btn" aria-label="Exporter"><svg><use href="#i-upload"/></svg></button>
+            <button class="icon-btn" id="likeBtn" aria-label="J'aime"><svg><use href="#i-heart"/></svg></button>
+            <button class="icon-btn" aria-label="Plus"><svg><use href="#i-more"/></svg></button>
+            <button class="icon-btn icon-btn--ring" data-go="results" aria-label="Fermer"><svg><use href="#i-close"/></svg></button>
+          </div>
+        </div>
+
+        <div class="gallery" id="gallery">
+          <figure class="gallery__main"><img id="gMain" src="" alt=""></figure>
+          <figure><img id="g1" src="" alt=""></figure>
+          <figure><img id="g2" src="" alt=""></figure>
+          <figure><img id="g3" src="" alt=""><button class="gallery__all">Voir les 24 photos</button></figure>
+        </div>
+
+        <div class="dbody">
+          <div class="dinfo">
+            <h2 class="dinfo__title" id="dType">Chambre privée dans une villa</h2>
+            <p class="hosted">Proposé par <img id="dHostImg" src="assets/img/host-1.jpg" alt=""> <b id="dHost">Koffi Yao</b></p>
+            <hr>
+            <ul class="facts">
+              <li><svg><use href="#i-home"/></svg> <span id="fGuests">2 voyageurs</span></li>
+              <li><svg><use href="#i-flag"/></svg> <span id="fBeds">1 chambre</span></li>
+              <li><svg><use href="#i-flag"/></svg> <span id="fBath">1 salle de bain privée</span></li>
+            </ul>
+            <div class="desc" id="dDesc"></div>
+
+            <h3 class="h3">Équipements</h3>
+            <ul class="amen">
+              <li><svg><use href="#i-wifi"/></svg> Wi-Fi fibre 24h/24</li>
+              <li><svg><use href="#i-bath"/></svg> Salle de bain nettoyée chaque jour</li>
+              <li><svg><use href="#i-screen"/></svg> Espace de travail & Smart TV</li>
+              <li><svg><use href="#i-food"/></svg> Petit-déjeuner ivoirien inclus</li>
+              <li><svg><use href="#i-pool"/></svg> Piscine à débordement</li>
+              <li><svg><use href="#i-snow"/></svg> Climatisation</li>
+              <li><svg><use href="#i-car"/></svg> Parking gratuit & navette</li>
+              <li><svg><use href="#i-shield"/></svg> Gardiennage 24h/24</li>
+            </ul>
+
+            <h3 class="h3">Ce que disent les voyageurs</h3>
+            <div class="reviews">
+              <article class="review"><header><img src="assets/img/host-2.jpg" alt=""><div><b>Serge K.</b><small>Décembre 2026</small></div></header><p>Le calme absolu, la lagune au réveil et un attiéké-poisson braisé incroyable préparé sur place. On reviendra !</p></article>
+              <article class="review"><header><img src="assets/img/host-3.jpg" alt=""><div><b>Mamadou D.</b><small>Novembre 2026</small></div></header><p>Hôte très réactif, navette depuis Abidjan bien organisée. La piscine face à la mer est encore plus belle qu'en photo.</p></article>
+            </div>
+          </div>
+
+          <aside class="book" id="book">
+            <div class="book__head">
+              <div>
+                <p class="book__price"><s id="bOld">65 000</s> <b id="bNew">55 000 FCFA</b> <span>/nuit</span></p>
+                <p class="book__rate"><svg class="star"><use href="#i-star"/></svg> <b id="bRating">4.8</b> <span class="muted" id="bReviews">(256 avis)</span></p>
+              </div>
+              <div class="book__host"><img id="bHost" src="assets/img/host-1.jpg" alt=""><i><svg><use href="#i-check"/></svg></i></div>
+            </div>
+            <div class="book__box">
+              <div class="book__row">
+                <div class="book__cell"><svg><use href="#i-cal"/></svg><div><small>Arrivée</small><b id="bIn">15 déc. 2026</b></div></div>
+                <div class="book__cell"><svg><use href="#i-cal"/></svg><div><small>Départ</small><b id="bOut">22 déc. 2026</b></div></div>
+              </div>
+              <div class="book__cell"><svg><use href="#i-user"/></svg><div><small>Voyageurs</small><b id="bGuests">2 voyageurs</b></div></div>
+            </div>
+            <div class="book__btns">
+              <button class="btn-save" id="saveBtn">Enregistrer <svg><use href="#i-plus"/></svg></button>
+              <button class="btn-primary btn-reserve" id="reserveBtn"><span>Réserver</span> <svg><use href="#i-bag"/></svg></button>
+            </div>
+            <ul class="book__lines">
+              <li><span id="lBase">65 000 × 7 nuits</span><b id="lBaseV">455 000</b></li>
+              <li><span>Remise campagne 15 %</span><b id="lDisc">−68 250</b></li>
+              <li><span>Frais de service</span><b id="lFee">15 000</b></li>
+              <li class="total"><span>Total</span><b id="lTotal">401 750 FCFA</b></li>
+            </ul>
+            <a href="#" class="report"><svg><use href="#i-flag"/></svg> Signaler ce logement</a>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <div class="veil" id="veil" aria-hidden="true"></div>
+    <div class="toast" id="toast" role="status"><i><svg><use href="#i-check"/></svg></i><div><b id="toastT">Réservation confirmée</b><small id="toastS"></small></div></div>
+  </div>
+</div>
+
+<script src="assets/js/app.js"></script>
+</body>
+</html>
